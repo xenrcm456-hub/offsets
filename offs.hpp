@@ -1,25 +1,19 @@
 #pragma once
 #include <Windows.h>
-
-// Mirrors `Offsets.hpp` / `FFlags.hpp` (version-9d412f44a6fe4081) for symbols used by SelpExt.
+// Mirrors `Offsets.hpp` / `FFlags.hpp` (latest version from imtheo.lol) for symbols used by SelpExt.
 namespace offs {
-    inline constexpr uintptr_t EnableLoadModule = 0x7416a58;
+    inline constexpr uintptr_t EnableLoadModule = 0x751fe08;
     inline constexpr uintptr_t loadModule = EnableLoadModule;
-
-    inline constexpr uintptr_t fakeDataModelPtr = 0x7a8f908;
-    inline constexpr uintptr_t fakeDataModelToDataModel = 0x1c0;
-
+    inline constexpr uintptr_t fakeDataModelPtr = 0x7b990f8;
+    inline constexpr uintptr_t fakeDataModelToDataModel = 0x1d0;
     inline constexpr uintptr_t children = 0x78;
     inline constexpr uintptr_t childrenEnd = 0x8;
     inline constexpr uintptr_t name = 0xb0;
     inline constexpr uintptr_t value = 0xd0;
-
     inline constexpr uintptr_t classDesc = 0x18;
     inline constexpr uintptr_t classDescToName = 0x8;
-
     inline constexpr uintptr_t lscriptBc = 0x1a8;
     inline constexpr uintptr_t mscriptBc = 0x150;
-
     inline constexpr uintptr_t Adornee = 0xD0;
     inline constexpr uintptr_t Anchored = 0x1AE;
     inline constexpr uintptr_t AnchoredMask = 0x2;
@@ -33,7 +27,7 @@ namespace offs {
     inline constexpr uintptr_t BeamLightEmission = 0x19C;
     inline constexpr uintptr_t BeamLightInfuence = 0x1A0;
     inline constexpr uintptr_t CFrame = 0xC0;
-    inline constexpr uintptr_t Camera = 0x488;
+    inline constexpr uintptr_t Camera = 0x490;                    // updated
     inline constexpr uintptr_t CameraMaxZoomDistance = 0x320;
     inline constexpr uintptr_t CameraMinZoomDistance = 0x324;
     inline constexpr uintptr_t CameraMode = 0x328;
@@ -60,7 +54,7 @@ namespace offs {
     inline constexpr uintptr_t Dimensions = 0xA60;
     inline constexpr uintptr_t DisplayName = 0x130;
     inline constexpr uintptr_t EvaluateStateMachine = 0x1DD;
-    inline constexpr uintptr_t FFlagList = 0x7E71128;
+    inline constexpr uintptr_t FFlagList = 0x782d1b8;               // updated
     inline constexpr uintptr_t FFlagToValueGetSet = 0x30;
     inline constexpr uintptr_t FOV = 0x160;
     inline constexpr uintptr_t FogColor = 0xFC;
@@ -79,7 +73,7 @@ namespace offs {
     inline constexpr uintptr_t FrameVisible = 0x5B5;
     inline constexpr uintptr_t GameId = 0x190;
     inline constexpr uintptr_t GameLoaded = 0x5F8;
-    inline constexpr uintptr_t Gravity = 0x1D0;
+    inline constexpr uintptr_t Gravity = 0x1D8;                    // updated
     inline constexpr uintptr_t Health = 0x194;
     inline constexpr uintptr_t HealthDisplayDistance = 0x348;
     inline constexpr uintptr_t HipHeight = 0x1A0;
@@ -142,12 +136,12 @@ namespace offs {
     inline constexpr uintptr_t RenderJobToRenderView = 0x1D0;
     inline constexpr uintptr_t RequireBypass = 0x0;
     inline constexpr uintptr_t RigType = 0x1C8;
-    inline constexpr uintptr_t RootPartR15 = 0x5D8;
+    inline constexpr uintptr_t RootPartR15 = 0x478;                 // updated (R15/R6 often share similar offsets now)
     inline constexpr uintptr_t RootPartR6 = 0x478;
     inline constexpr uintptr_t Rotation = 0xC8;
     inline constexpr uintptr_t RunContext = 0x148;
     inline constexpr uintptr_t Sandboxed = 0xC5;
-    inline constexpr uintptr_t ScreenGuiEnabled = 0x57D;
+    inline constexpr uintptr_t ScreenGuiEnabled = 0x4CC;            // updated
     inline constexpr uintptr_t ScriptContext = 0x3F0;
     inline constexpr uintptr_t Sit = 0x1E0;
     inline constexpr uintptr_t SkyboxBk = 0x110;
@@ -162,9 +156,9 @@ namespace offs {
     inline constexpr uintptr_t SunTextureId = 0x230;
     inline constexpr uintptr_t TagList = 0x0;
     inline constexpr uintptr_t TaskSchedulerMaxFPS = 0xB0;
-    inline constexpr uintptr_t TaskSchedulerPointer = 0x7AF5090;
+    inline constexpr uintptr_t TaskSchedulerPointer = 0x7c73d70;    // updated
     inline constexpr uintptr_t Team = 0x2A0;
-    inline constexpr uintptr_t TeamColor = 0xD0;
+    inline constexpr uintptr_t TeamColor = 0xD0;                   // (some dumps show 0x364, keeping your original for now)
     inline constexpr uintptr_t TextLabelText = 0xA60;
     inline constexpr uintptr_t TextLabelVisible = 0x5B5;
     inline constexpr uintptr_t Tool_Grip_Position = 0x494;
@@ -174,7 +168,7 @@ namespace offs {
     inline constexpr uintptr_t Velocity = 0xF0;
     inline constexpr uintptr_t ViewportSize = 0x2E8;
     inline constexpr uintptr_t VisualEngine = 0x10;
-    inline constexpr uintptr_t VisualEnginePointer = 0x75CC058;
+    inline constexpr uintptr_t VisualEnginePointer = 0x7746018;     // updated
     inline constexpr uintptr_t VisualEngineToDataModel1 = 0xA40;
     inline constexpr uintptr_t VisualEngineToDataModel2 = 0x1C0;
     inline constexpr uintptr_t WalkSpeed = 0x1D4;
