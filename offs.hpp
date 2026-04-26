@@ -1,10 +1,10 @@
 #pragma once
 #include <Windows.h>
-// Mirrors Offsets.hpp / FFlags.hpp (latest version from imtheo.lol) for symbols used by SelpExt.
+// Mirrors `Offsets.hpp` / `FFlags.hpp` (latest version from imtheo.lol) for symbols used by SelpExt.
 namespace offs {
     inline constexpr uintptr_t EnableLoadModule = 0x751fe08;
     inline constexpr uintptr_t loadModule = EnableLoadModule;
-    inline constexpr uintptr_t fakeDataModelPtr = 0x7b991d8;
+    inline constexpr uintptr_t fakeDataModelPtr = 0x7b990f8;
     inline constexpr uintptr_t fakeDataModelToDataModel = 0x1d0;
     inline constexpr uintptr_t children = 0x78;
     inline constexpr uintptr_t childrenEnd = 0x8;
@@ -12,22 +12,22 @@ namespace offs {
     inline constexpr uintptr_t value = 0xd0;
     inline constexpr uintptr_t classDesc = 0x18;
     inline constexpr uintptr_t classDescToName = 0x8;
-    inline constexpr uintptr_t lscriptBc = 0x0;  // Updated from LocalScript::ByteCode
-    inline constexpr uintptr_t mscriptBc = 0x0;  // Updated from ModuleScript::ByteCode
-    inline constexpr uintptr_t Adornee = 0x108;  // Updated from Misc
-    inline constexpr uintptr_t Anchored = 0x2;
+    inline constexpr uintptr_t lscriptBc = 0x1a8;
+    inline constexpr uintptr_t mscriptBc = 0x150;
+    inline constexpr uintptr_t Adornee = 0xD0;
+    inline constexpr uintptr_t Anchored = 0x1AE;
     inline constexpr uintptr_t AnchoredMask = 0x2;
-    inline constexpr uintptr_t AnimationId = 0xd0;
+    inline constexpr uintptr_t AnimationId = 0xD0;
     inline constexpr uintptr_t AttributeToNext = 0x58;
     inline constexpr uintptr_t AttributeToValue = 0x18;
-    inline constexpr uintptr_t AutoJumpEnabled = 0x1d8;  // Updated from Humanoid
+    inline constexpr uintptr_t AutoJumpEnabled = 0x1DB;
     inline constexpr uintptr_t BanningEnabled = 0x14C;
     inline constexpr uintptr_t BeamBrightness = 0x190;
     inline constexpr uintptr_t BeamColor = 0x120;
     inline constexpr uintptr_t BeamLightEmission = 0x19C;
     inline constexpr uintptr_t BeamLightInfuence = 0x1A0;
     inline constexpr uintptr_t CFrame = 0xC0;
-    inline constexpr uintptr_t Camera = 0x490;  // Updated from Workspace::CurrentCamera
+    inline constexpr uintptr_t Camera = 0x490;                    // updated
     inline constexpr uintptr_t CameraMaxZoomDistance = 0x320;
     inline constexpr uintptr_t CameraMinZoomDistance = 0x324;
     inline constexpr uintptr_t CameraMode = 0x328;
@@ -53,8 +53,8 @@ namespace offs {
     inline constexpr uintptr_t DeleterBack = 0x18;
     inline constexpr uintptr_t Dimensions = 0xA60;
     inline constexpr uintptr_t DisplayName = 0x130;
-    inline constexpr uintptr_t EvaluateStateMachine = 0x1DC;  // Updated from Humanoid
-    inline constexpr uintptr_t FFlagList = 0x782d5f8;  // Updated
+    inline constexpr uintptr_t EvaluateStateMachine = 0x1DD;
+    inline constexpr uintptr_t FFlagList = 0x782d1b8;               // updated
     inline constexpr uintptr_t FFlagToValueGetSet = 0x30;
     inline constexpr uintptr_t FOV = 0x160;
     inline constexpr uintptr_t FogColor = 0xFC;
@@ -73,7 +73,7 @@ namespace offs {
     inline constexpr uintptr_t FrameVisible = 0x5B5;
     inline constexpr uintptr_t GameId = 0x190;
     inline constexpr uintptr_t GameLoaded = 0x5F8;
-    inline constexpr uintptr_t Gravity = 0x1D8;  // Updated from World
+    inline constexpr uintptr_t Gravity = 0x1D8;                    // updated
     inline constexpr uintptr_t Health = 0x194;
     inline constexpr uintptr_t HealthDisplayDistance = 0x348;
     inline constexpr uintptr_t HipHeight = 0x1A0;
@@ -101,13 +101,13 @@ namespace offs {
     inline constexpr uintptr_t MaxHealth = 0x1B4;
     inline constexpr uintptr_t MaxSlopeAngle = 0x1B8;
     inline constexpr uintptr_t MeshPartColor3 = 0x194;
-    inline constexpr uintptr_t MeshPartTexture = 0x328;  // Updated from MeshPart
+    inline constexpr uintptr_t MeshPartTexture = 0x318;
     inline constexpr uintptr_t ModelInstance = 0x398;
     inline constexpr uintptr_t ModuleScriptBytecodePointer = 0x10;
     inline constexpr uintptr_t ModuleScriptHash = 0x160;
     inline constexpr uintptr_t MoonTextureId = 0xE0;
     inline constexpr uintptr_t MousePosition = 0xEC;
-    inline constexpr uintptr_t MouseSensitivity = 0x7C388D0;  // Updated from MouseService
+    inline constexpr uintptr_t MouseSensitivity = 0x7ABC440;
     inline constexpr uintptr_t MoveDirection = 0x158;
     inline constexpr uintptr_t NameDisplayDistance = 0x358;
     inline constexpr uintptr_t NameSize = 0x10;
@@ -117,7 +117,7 @@ namespace offs {
     inline constexpr uintptr_t PartSize = 0x1B0;
     inline constexpr uintptr_t Ping = 0xCC;
     inline constexpr uintptr_t PlaceId = 0x198;
-    inline constexpr uintptr_t PlayerConfigurerPointer = 0x7B6E7E8;  // Updated
+    inline constexpr uintptr_t PlayerConfigurerPointer = 0x79F30D0;
     inline constexpr uintptr_t PlayerMouse = 0xFC8;
     inline constexpr uintptr_t Position = 0xE4;
     inline constexpr uintptr_t Primitive = 0x148;
@@ -130,18 +130,18 @@ namespace offs {
     inline constexpr uintptr_t ProximityPromptHoldDuraction = 0x140;
     inline constexpr uintptr_t ProximityPromptMaxActivationDistance = 0x148;
     inline constexpr uintptr_t ProximityPromptMaxObjectText = 0xF0;
-    inline constexpr uintptr_t ReadOnlyGravity = 0x9C0;  // Updated from Workspace
-    inline constexpr uintptr_t RenderJobToDataModel = 0x1C0;  // Updated from RenderJob::RealDataModel
+    inline constexpr uintptr_t ReadOnlyGravity = 0x9B0;
+    inline constexpr uintptr_t RenderJobToDataModel = 0x1B0;
     inline constexpr uintptr_t RenderJobToFakeDataModel = 0x38;
     inline constexpr uintptr_t RenderJobToRenderView = 0x1D0;
     inline constexpr uintptr_t RequireBypass = 0x0;
     inline constexpr uintptr_t RigType = 0x1C8;
-    inline constexpr uintptr_t RootPartR15 = 0x478;  // Updated from Humanoid::HumanoidRootPart
+    inline constexpr uintptr_t RootPartR15 = 0x478;                 // updated (R15/R6 often share similar offsets now)
     inline constexpr uintptr_t RootPartR6 = 0x478;
     inline constexpr uintptr_t Rotation = 0xC8;
     inline constexpr uintptr_t RunContext = 0x148;
     inline constexpr uintptr_t Sandboxed = 0xC5;
-    inline constexpr uintptr_t ScreenGuiEnabled = 0x4CC;
+    inline constexpr uintptr_t ScreenGuiEnabled = 0x4CC;            // updated
     inline constexpr uintptr_t ScriptContext = 0x3F0;
     inline constexpr uintptr_t Sit = 0x1E0;
     inline constexpr uintptr_t SkyboxBk = 0x110;
@@ -156,10 +156,10 @@ namespace offs {
     inline constexpr uintptr_t SunTextureId = 0x230;
     inline constexpr uintptr_t TagList = 0x0;
     inline constexpr uintptr_t TaskSchedulerMaxFPS = 0xB0;
-    inline constexpr uintptr_t TaskSchedulerPointer = 0x7c73e50;  // Updated
+    inline constexpr uintptr_t TaskSchedulerPointer = 0x7c73d70;    // updated
     inline constexpr uintptr_t Team = 0x2A0;
-    inline constexpr uintptr_t TeamColor = 0x364;  // Updated from Player
-    inline constexpr uintptr_t TextLabelText = 0xDC0;  // Updated from GuiObject::Text (more accurate for TextLabel)
+    inline constexpr uintptr_t TeamColor = 0xD0;                   // (some dumps show 0x364, keeping your original for now)
+    inline constexpr uintptr_t TextLabelText = 0xA60;
     inline constexpr uintptr_t TextLabelVisible = 0x5B5;
     inline constexpr uintptr_t Tool_Grip_Position = 0x494;
     inline constexpr uintptr_t Transparency = 0xF0;
@@ -168,12 +168,12 @@ namespace offs {
     inline constexpr uintptr_t Velocity = 0xF0;
     inline constexpr uintptr_t ViewportSize = 0x2E8;
     inline constexpr uintptr_t VisualEngine = 0x10;
-    inline constexpr uintptr_t VisualEnginePointer = 0x7746260;  // Updated
+    inline constexpr uintptr_t VisualEnginePointer = 0x7746018;     // updated
     inline constexpr uintptr_t VisualEngineToDataModel1 = 0xA40;
     inline constexpr uintptr_t VisualEngineToDataModel2 = 0x1C0;
     inline constexpr uintptr_t WalkSpeed = 0x1D4;
     inline constexpr uintptr_t WalkSpeedCheck = 0x3BC;
     inline constexpr uintptr_t Workspace = 0x178;
-    inline constexpr uintptr_t WorkspaceToWorld = 0x408;  // Updated from Workspace::World
+    inline constexpr uintptr_t WorkspaceToWorld = 0x400;
     inline constexpr uintptr_t viewmatrix = 0x130;
 }
