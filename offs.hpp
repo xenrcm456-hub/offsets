@@ -54,7 +54,7 @@ namespace offs {
     inline constexpr uintptr_t Dimensions = 0xA90; // unchanged (VisualEngine::Dimensions)
     inline constexpr uintptr_t DisplayName = 0x130; // unchanged (Player::DisplayName)
     inline constexpr uintptr_t EvaluateStateMachine = 0x1E4; // unchanged (Humanoid::EvaluateStateMachine)
-    inline constexpr uintptr_t FFlagList = 0x782d5f8; // unchanged (FFlags still version-390ba09e7e944154)
+    inline constexpr uintptr_t FFlagList = 0x7c85b98; // updated
     inline constexpr uintptr_t FFlagToValueGetSet = 0x30;
     inline constexpr uintptr_t FOV = 0x160; // unchanged (Camera::FieldOfView)
     inline constexpr uintptr_t FogColor = 0xFC; // unchanged (Lighting::FogColor)
